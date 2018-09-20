@@ -1,19 +1,24 @@
 {
-	"name": "kawaii-void-blaster-engine",
-	"description": "Kawaii Void Blaster Engine",
+    "name": "kawaii-void-blaster-engine",
+    "description": "A 2D RPG game engine for the D programming language",
 
-	"copyright": "Copyright © 2017 0xEAB",
-	"license": "MPL-2.0",
+    "copyright": "Copyright © 2017-2018  0xEAB",
+    "license": "MPL-2.0",
 
-	"authors": [
-		"Elias Batek (0xEAB)"
-	],
+    "authors": [
+        "Elias Batek (0xEAB)"
+    ],
 
-	"targetPath": "bin",
-	"targetType": "library",
+    "targetPath": "bin",
 
-	"dependencies": {
-		"algorithm": "~>0.2.0",
-		"dgame": "~>0.6.5"
-	}
+    "buildRequirements": [
+        "allowWarnings"
+    ],
+
+    "dependencies": {
+        "dareal2": {
+            "path": "../dareal2"
+        },
+        "arsd-official:nanovega": "~>2.1.0"
+    }
 }
